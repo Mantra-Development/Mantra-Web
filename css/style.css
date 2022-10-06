@@ -15,9 +15,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 5px 10%;
+    padding-top: 0px;
   }
-  
+ 
+  #logo{
+    margin-top: 15px;
+  }
+
   .nav__links a,
   .cta,
   .overlay__content a {
@@ -132,6 +137,5 @@ header {
 
   
 #logo img{
-    width: 150px;
-    height: 100px;
+    width: 100px;
 }
