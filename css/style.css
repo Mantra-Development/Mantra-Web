@@ -139,3 +139,46 @@ header {
 #logo img{
     width: 100px;
 }
+
+.hero{
+  text-align: center;
+  color: #dbc169;
+  background-image: url(../images/banner.svg);
+  background-repeat: no-repeat;
+  opacity: 1;
+
+}
+
+#main{
+  margin-top: 1.5em;
+  font-size: 30px;
+}
+
+#description{
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.button{
+  border: 1px solid #d9cda3;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #d9cda3;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover{
+  color: #fff;
+}
+
+.button:before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  height: 180%;
+}
+
