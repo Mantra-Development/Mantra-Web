@@ -1,165 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-body{
-background-color: #070F21;
+body {
+  background-color: #070f21;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10%;
-    padding-top: 0px;
-  }
- 
-  #logo{
-    margin-top: 15px;
-  }
-
-  .nav__links a,
-  .cta,
-  .overlay__content a {
-    color: #edf0f1;
-    text-decoration: none;
-    font-size: px;
-  }
-  
-  .nav__links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav__links li {
-    padding: 0px 20px;
-  }
-  
-  .nav__links li a {
-    transition: color 0.3s ease 0s;
-  }
-  
-  .nav__links li a:hover {
-    color: #0088a9;
-  }
-  
-  .cta {
-    padding: 9px 25px;
-    background-color: #FCA311;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease 0s;
-  }
-  
-  .cta:hover {
-    background-color: #FCA311
-  }
-  
-  /* Mobile Nav */
-  
-  .menu {
-    display: none;
-
-  }
-  
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    overflow-x: hidden;
-    transition: width 0.5s ease 0s;
-  }
-  
-  .overlay--active {
-    width: 100%;
-  }
-  
-  .overlay__content {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-  }
-  
-  .overlay a {
-    padding: 15px;
-    font-size: 25px;
-    display: block;
-    transition: color 0.3s ease 0s;
-  }
-  
-  .overlay a:hover,
-  .overlay a:focus {
-    color: #0088a9;
-  }
-  .overlay .close {
-    position: absolute;
-    top: 90px;
-    right: 45px;
-    font-size: 60px;
-    color: #edf0f1;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {
-      font-size: 20px;
-    }
-    .overlay{
-        background-color: black;
-    }
-    .overlay .close {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .nav__links,
-    .cta {
-      display: none;
-    }
-    .menu {
-      display: initial;
-    }
-  }
-
-  
-#logo img{
-    width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+  padding-top: 0px;
 }
 
-.hero{
+#logo {
+  margin-top: 15px;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  color: #edf0f1;
+  text-decoration: none;
+  font-size: px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: #fca311;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: #fca311;
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 25px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 90px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay {
+    background-color: black;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+#logo img {
+  width: 100px;
+}
+
+.hero {
   text-align: center;
   color: #dbc169;
   background-image: url(../images/banner.svg);
   background-repeat: no-repeat;
   opacity: 1;
-
 }
 
-#main{
+#main {
   margin-top: 1.5em;
   font-size: 30px;
 }
 
-#description{
+#description {
   font-size: 20px;
   line-height: 40px;
 }
 
-.button{
+.button {
   border: 1px solid #d9cda3;
   background: none;
   padding: 10px 20px;
@@ -172,11 +170,11 @@ header {
   overflow: hidden;
 }
 
-.button:hover{
+.button:hover {
   color: #fff;
 }
 
-.button:before{
+.button:before {
   bottom: 0;
   border-radius: 50% 50% 0 0;
   height: 180%;
@@ -197,11 +195,11 @@ header {
   font-weight: 300;
 }
 
-.row hr{
-color:#FCA311;
-text-align: center;
-width: 50px;
-align-items: center;
+.row hr {
+  color: #fca311;
+  text-align: center;
+  width: 50px;
+  align-items: center;
 }
 
 .column {
@@ -220,7 +218,7 @@ align-items: center;
   cursor: pointer;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
@@ -279,5 +277,36 @@ a{
     flex: 0 0 33.33%;
     max-width: 33.33%;
     padding: 0 1em;
+  }
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #fca311; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 7px 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+@media only screen and (max-width: 600px) {
+  #myBtn {
+    font-size: 30px;
+    border-radius: 100px;
+    width: 55px;
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
   }
 }
